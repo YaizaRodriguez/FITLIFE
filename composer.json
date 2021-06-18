@@ -1,0 +1,22 @@
+{
+    "name": "yaiza/fitlife_fct",
+    "description": "FCT FitLife",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Yaiza Rodriguez",
+            "email": "yaizarodriguezg96@gmail.com"
+        }
+    ],
+    "require": {
+        "intervention/image": "^2.5",
+        "phpmailer/phpmailer": "^6.5"
+    }, 
+    "autoload": {
+        "psr-4": {
+            "Model\\" : "./models", 
+            "MVC\\" : "./", 
+            "Controllers\\" : "./controllers"
+        }
+    }
+}

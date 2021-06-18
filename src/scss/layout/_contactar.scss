@@ -1,0 +1,49 @@
+.no-webp .imagen-contacto .imagen-contacto-i{
+    background-image: url(../img/contacto.jpg);
+}
+
+.webp .imagen-contacto .imagen-contacto-i{
+    background-image: url(../img/contacto.webp);
+}
+
+.imagen-contacto {
+    /*background-position: center center;
+    padding: $separacion 0;
+    align-items: center;*/
+
+    height: 30rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    h2 {
+        font-size: 4rem;
+        font-weight: $black;
+        color: $negro;
+    }
+
+}
+    .pcontacto {
+        font-family: $fuente_secundaria;
+        color: $negro;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .div-contacto {
+        background: url('../img/contacto.jpg') no-repeat;
+        background-size: cover;
+        background-position: center center;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        padding-bottom: 2rem;
+        
+      
+    }
+
+.contacto.bg {
+    height: 40rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+

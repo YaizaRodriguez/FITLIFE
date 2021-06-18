@@ -1,0 +1,56 @@
+.text-center {
+    text-align: center;
+}
+
+.contenedor-rutinas {
+    
+    @include tablet {
+        height: 100vh;  //Toma toda la ventana gráfica.
+        @include grid (2, $separacion);
+    }
+
+    .imagenR{
+    height: 20rem;  
+    background-image: url(../img/action.jpg);
+    background-size: cover;
+    background-position: top right;
+    @include tablet {
+        height: auto;
+    }
+    }
+}
+
+.appR {
+    width: 95%;
+    margin: 0 auto;
+    padding-top: $separacion / 2;
+
+    .seccionR {
+        display: none;
+        margin-top: $separacion / 2;
+        &:first-of-type{
+            display: block;
+        }
+    }
+}
+
+/**********************************************************************/
+
+.tabsR {
+    @include grid (3, 2rem);
+    button {
+        background-color: $verdeClaro;
+        font-size: 1.4rem;
+        font-family: $fuente_secundaria;
+        font-weight: $bold;
+        color: $blanco;
+        padding: 1rem;
+        text-align: center;
+        text-transform: uppercase;
+        border: none;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}

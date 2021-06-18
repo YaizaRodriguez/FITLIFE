@@ -1,0 +1,86 @@
+.contenido-nosotros {
+    @include tablet {
+        @include grid (2, 2rem);
+    }
+
+    p {
+        font-family: $fuente_secundaria;
+   
+    }
+}
+
+.texto-nosotros blockquote {
+
+    font-family: $fuente_principal;
+    font-size: 2.8rem;
+    margin: 3rem 0 0 0;
+    padding: 1rem 0 2rem 0; 
+}
+
+
+.bloques {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+@include tablet {
+    .bloques {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.bloque {
+    text-align: center;
+}
+
+.bloque__titulo {
+    margin: 0;
+}
+
+.bloque__imagen{
+    width: 10rem;
+    margin-left: 10rem;
+    
+}
+
+
+
+.tooltip {
+    color: $verdeClaro;
+    position: relative;
+}
+
+.tooltip:hover {
+    text-decoration: underline;
+}
+
+.tooltip:hover .tooltip-box {
+    display: inline-block;
+}
+
+.tooltip-box {
+    display: none;
+    position: absolute;
+    background: $negro;
+    line-height: 2rem;
+    z-index: 500;
+    text-align: center;
+    color: $blanco;
+    font-size: 1.4rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+    left: 0;
+    right: 0;
+    bottom: 30px;
+}
+
+.tooltip-box::after {
+    content: "";
+    display: block;
+    border-top: 7px solid $negro;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    position: absolute;
+    bottom: -7px;
+    left: calc(50% - 7px);
+}

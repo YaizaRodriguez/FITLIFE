@@ -1,0 +1,53 @@
+.no-webp .inicio {
+    background-image: url(../img/sport.jpg);  //Modernizer - webp
+}
+
+.webp .inicio{
+    background-image: url(../img/sport.webp);  
+}
+
+.logo {
+    font-family: $fuente_principal;
+    font-size: $regular;
+}
+
+.header {
+    background-color: $negro;
+    padding: 1rem 0 3rem 0;
+
+    &.inicio {   //& para hacer referencia al mismo elemento
+       background-position: center center;  //Se ve a partir del centro vertival y horizontalmente
+       background-size: cover;  //Toma todo el espacio disponible
+       
+        @include tablet {
+            min-height: 70rem;
+        }
+
+        .contenido-header {
+            @include tablet {
+                min-height: 70rem;
+
+            }
+        }
+    }
+}
+
+    .contenido-header {    //Posiciona el h1 del header
+        display: flex;   
+        flex-direction: column;
+        justify-content: space-between;
+
+
+        h1 {
+            color: $blanco;
+            font-family: $fuente_principal;
+        }
+
+        h2 {
+            color: $blanco;
+            font-family: $fuente_secundaria;
+            font-size: 2.2rem;
+            text-align: center;
+        
+        }
+    }

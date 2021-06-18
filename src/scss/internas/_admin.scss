@@ -1,0 +1,41 @@
+.alerta {
+    padding: .5rem;
+    text-align: center;
+    color: $blanco;
+    font-family: $fuente_secundaria;
+    text-transform: uppercase;
+    margin: 1rem 0;
+
+    &.error {
+        background-color: $rojo;
+    }
+
+    &.exito {
+        background-color: $verdeClaro;
+    }
+}
+
+
+table.rutinas{
+    margin-top: 4rem;  //Separacion entre tabla y boton de nueva rutina
+    width: 100%;  //Toma todo el espacio disponible
+    border-spacing: 0;
+
+    thead {
+        background-color: $verdeClaro;
+
+        th {
+            color: $blanco;
+            padding: 2rem;
+        }
+    }
+
+    .imagen-tabla {
+        width: 10rem;
+
+    }
+}
+
+.imagen-small {
+    width: 20rem;
+}
